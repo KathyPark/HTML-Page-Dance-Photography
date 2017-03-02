@@ -1,0 +1,121 @@
+
+* {	
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-justify-content: space-around;
+  	justify-content: space-around;
+  	-webkit-flex-flow: row wrap;
+  	flex-flow: row wrap;
+  	-webkit-align-items: stretch;
+  	align-items: stretch;
+	}
+/*Deeply thankful for this website: https://preview.webflow.com/preview/flexbox-game?preview=d1a26b027c4803817087a91c651e321f&m=1
+and these videos https://www.youtube.com/watch?v=qWL-7ih9Kw0&index=16&list=PLu8EoSxDXHP7xj_y6NIAhy0wuCd4uVdid
+for being able to get some semblance of an understanding of FLEX-BOX */
+
+
+.banner { /* setting a background image for a banner, centered on page, with no repeat and a background color 
+	of blackso that when window is resized the photo will get small but the banner space
+	will still contrast with text  USed this codepen as a beginning, 
+	not sure how much actual code I used directly -https://codepen.io/joshkill/pen/LBfuC
+	*/
+	background: url(images/KDAdressrehearsalfri-8313.jpg) center center;
+	background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #06030f;
+	}
+
+.bannerquote { /* I wanted the quote to lie on top of the photo and to have italic styling in a light color
+	for contrast */
+      color: #aaa;
+      letter-spacing: 1px;
+      font-size: 20px;
+      margin: 0 5%;
+      font-style: italic;
+      text-align: center;
+      padding-top: 540px;
+      padding-bottom: 20px;
+    }
+
+.layout {
+   	display: flex;
+   	flex-direction: row;
+  	flex-wrap: wrap;
+  	align-items: center;
+	max-width: 100%;
+	height: auto;
+	border: 10px solid #ccc;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0; 
+    background-color: rgba(135, 206, 250, 0.31);
+	}
+
+.content {
+   	display: flex;
+   	flex-direction: row;
+   	flex-wrap: wrap;
+  	align-items: center;
+  	justify-content: space-around;
+	}
+
+/* This page, especially responsive image gallery and polaroid 
+images was very helpful in figuring out how to do the images on my page. 
+http://www.w3schools.com/css/css3_images.asp
+I used css code from both examples */
+.image {
+  	max-width: 40%;
+    height: auto;
+    color: #033077;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 10px;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: white;
+    align-self: flex-start;
+	}
+
+.desc {
+	text-align: center;
+	}
+
+h1 {
+width: 100%;
+	}
+
+li {
+	margin: 1em 0;
+	}
+
+img { 
+	max-width: 100%; 
+    height: auto;
+    border-radius: 8px;
+	}
+
+.text {
+ 	box-sizing: border-box;
+    flex-basis: 500px;
+    border: 3px #033077;
+ 	}
+/* This codepen was the starting point for my footer: https://codepen.io/cbracco/pen/zekgx */
+.footer {
+	padding: 3rem;
+  	color: #aaa;
+  	background-color: #06030f;
+  	text-align: center;
+	}
+
+.footer img {
+	width: 40px; 
+    height: auto;
+    border-radius: 0px;
+    padding-top: 10px;
+	}
+
+/*all other css that hasn't been taught in nano degree I looked up on google what I wanted to do and played in 
+developer tools until I got it the way I wanted. I'm disappointed I am turning this in late but once I knew
+about flexbox I had to take the time to figure it out to a level that I could use it, I may be using it 
+incorrectly, or it might be overkill but it works and I learned stuff!*/
